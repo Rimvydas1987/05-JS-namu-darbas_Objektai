@@ -1,29 +1,38 @@
 "use strict"
 document.getElementById("patvirtinta").addEventListener("click", function() {
 
-    let sk1, sk2;
-    sk1 = parseFloat(document.getElementById("sk1").value);
-    sk2 = parseFloat(document.getElementById("sk2").value);
+    let a, b;
+    a = parseFloat(document.getElementById("sk1").value);
+    b = parseFloat(document.getElementById("sk2").value);
 
     const kvadratas = {
-        
-        plotas: function(a, b) {
+        a: 5,
+        b: 4,
+        aktyvavimas: function() {
+            this.a = a;
+            this.b = b;
+        },
+        plotas: function() {
             return a * b;
-            
         },
-        perimetras: function(a, b){
-            return 2 * a + 2 * b;
+        perimetras: function(){
+            return 2 * (a + b);
         },
-        istrizaine: function(a, b) {
+        istrizaine: function() {
             return Math.sqrt(a * a + b * b);
         },
-        rezultatas: function(a, b) {
-            document.getElementById("plotas").innerHTML = "Plotas: " + this.plotas(a, b);
-            document.getElementById("perimetras").innerHTML = "Perimetras: " + this.perimetras(a, b);
-            document.getElementById("istrizaine").innerHTML = "Įstrižainė: " + this.istrizaine(a, b);
+        nubrezk: function() {
+            let elementas = document.querySelector(".keturkampis");
+            elementas.style.width = this.a + "px";
+            elementas.style.height = this.b + "px";
+        },
+        rezultatas: function() {
+            document.getElementById("plotas").innerHTML = "Plotas: " + this.plotas();
+            document.getElementById("perimetras").innerHTML = "Perimetras: " + this.perimetras();
+            document.getElementById("istrizaine").innerHTML = "Įstrižainė: " + this.istrizaine();
         },
     };
-
-kvadratas.rezultatas(sk1, sk2);
-
+kvadratas.aktyvavimas();
+kvadratas.rezultatas();
+kvadratas.nubrezk();
 });

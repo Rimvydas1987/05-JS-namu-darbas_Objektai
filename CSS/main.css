@@ -22,3 +22,15 @@ p {
 .blue {
     background-color: blue;
 }
+.keturkampis {
+    background-color: chartreuse;
+}
+.rezultatasDiv div:nth-child(even) {/*div:nth-child(even) taikys kas antram div elementui*/
+    background-color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bandymas {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
