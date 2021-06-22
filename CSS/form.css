@@ -1,0 +1,50 @@
+.buttons > a {
+    padding:40px;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    margin-right: 10px;
+    line-height: 85px;
+    text-decoration: none;
+    color: #3751ff;
+    background: white;
+    border-style: groove;
+    border-color: #3751ff;
+    border-radius: 3px;
+    border: 1px solid;
+    box-shadow: 0px 4px 8px 0pc #0005;
+}
+
+.function-button {
+    padding: 20px;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #3751ff;
+    background: white;
+    border-style: groove;
+    border-color: #3751ff;
+    border-radius: 3px;
+    border: 1px solid;
+    box-shadow: 0px 4px 8px 0pc #0005;
+}
+.label-input {
+    display: inline-flex;
+    padding-top: 3px;
+    font-size: 30px;
+}
+input {
+    padding: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    width: 200px;
+    height: 41px;
+    font-size: 20px;
+}
+.elementasIndex {
+    width: 200px;
+    height: 20px;
+    float: left;
+}
+

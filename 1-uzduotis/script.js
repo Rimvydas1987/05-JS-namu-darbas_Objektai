@@ -42,11 +42,10 @@ document.getElementById("patvirtinta").addEventListener("click", function() {
         },
         vidurkis: function() {
             let sum = 0;
-            let masIlg = this.rezultatas().length;
-            for (let i=0; i < masIlg; i++) {
-            sum = sum + this.rezultatas[i];
+            for (let i=0; i < this.rezultatas().length; i++) {
+            sum = sum + this.rezultatas()[i];
             }
-            let vid = sum / masIlg;
+            let vid = sum / this.rezultatas().length;
             return vid;
         },
     };
