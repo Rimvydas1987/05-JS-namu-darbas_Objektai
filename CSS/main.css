@@ -19,3 +19,6 @@ p {
 .talpykla {
     display: grid;
 }
+.blue {
+    background-color: blue;
+}
